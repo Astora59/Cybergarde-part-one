@@ -31,7 +31,7 @@ label start:
     "\"{i}j'arrive pas à croire que tu regardes Miraculous ! t'es pas trop vieux pour ça ?\"{/i}"
     "Autant dire que le brouhaha était suffisamment difficile à encaisser pour Binta. La vie citadine est bien plus bruyante que celle que l'on peut retrouver en campagne."
     "Les vacances lui manquaient terriblement, mais pas le choix : quand faut y aller, faut y aller !"
-    "Binta avance nonchalamment vers le portail de son collège"
+    "Binta avance nonchalamment vers le portail de son collège et lève sa tête, une nouvelle journée commence."
     scene hell 
     show Binta angry
     show Maydan happy
