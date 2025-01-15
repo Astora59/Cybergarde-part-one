@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: end of line expected.
-    scene front-gate.jpg
-                    ^
+File "game/script.rpy", line 95: expected 'simple_expression' not found.
+    zoom 
+         ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Mon Jan  6 11:11:21 2025
+Wed Jan 15 15:24:01 2025
