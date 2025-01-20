@@ -6,10 +6,46 @@
 define b = Character("Binta")
 define y = Character("Yanis")
 define m = Character("Maydan")
+define inconnu = Character("???")
 
 
 # declare characters sprites
+# Binta
+image Binta_afraid = "Binta_afraid.png"
+image Binta_angry = "Binta_angry.png"
 image Binta_annoyed = "Binta_annoyed.png"
+image Binta_anxious = "Binta_anxious.png"
+image Binta_default_happy = "Binta_default_happy.png"
+image Binta_explaining = "Binta_explaining.png"
+image Binta_grossed_out = "Binta_grossed_out.png"
+image Binta_sad = "Binta_sad.png"
+image Binta_sad_notspeaking = "Binta_sad_notspeaking.png"
+image Binta_thinking = "Binta_thinking.png"
+image Binta_very_happy = "Binta_very_happy.png"
+
+# Mayden
+image Mayden_afraid = "Mayden_afraid.png"
+image Mayden_angry = "Mayden_angry.png"
+image Mayden_annoyed = "Mayden_annoyed.png"
+image Mayden_anxious = "Mayden_anxious.png"
+image Mayden_default = "Mayden_default.png"
+image Mayden_default_happy = "Mayden_default_happy.png"
+image Mayden_explaining = "Mayden_explaining.png"
+image Mayden_sad = "Mayden_sad.png"
+image Mayden_very_happy = "Mayden_very_happy.png"
+
+# Yanis
+image Yanis_afraid = "Yanis_afraid.png"
+image Yanis_angry = "Yanis_angry.png"
+image Yanis_annoyed = "Yanis_annoyed.png"
+image Yanis_concerned = "Yanis_concerned.png"
+image Yanis_default = "Yanis_default.png"
+image Yanis_default_happy = "Yanis_default_happy.png"
+image Yanis_explaining = "Yanis_explaining.png"
+image Yanis_sad = "Yanis_sad.png"
+image Yanis_thinking = "Yanis_thinking.png"
+image Yanis_very_happy = "Yanis_very_happy.png"
+image Yanis_very_happy_afterThinking = "Yanis_very_happy_afterThinking.png"
 
 
 
@@ -34,6 +70,15 @@ transform size_normal:
     ysize 600
     fit "contain"
 
+
+#character positions 
+transform left: 
+    xalign 0.0
+    zoom (0.5)
+
+transform right: 
+    xalign 1.0
+    zoom (0.5)
 
 
 # The game starts here.
@@ -82,20 +127,33 @@ label start:
     with Pause(1.0)  # Pause pour observer l'effet
 
     
-    "\"{i}FAIS ATTENTION OU TU MARCHES IDIOTE !\"{/i}"
+    inconnu "\"{i}FAIS ATTENTION OU TU MARCHES IDIOTE !\"{/i}"
     
     
     "Binta avait percuté avec violence un autre jeune homme, très probablement proche de son âge. Comment avait-il pu la percuter avec autant de force ?"
 
     "C'est en regardant en sa direction, qu'elle se rendit compte de sa trottinette électrique."
     
-    show Binta_annoyed: 
-        yalign 0.3
-        zoom (0.5)
+    show Binta_annoyed at left :
+
+    
     b "Mais ça va pas d'accélérer aussi vite aussi proche de l'entrée ? Et qui tu traites d'idiote ? Certainement pas moi j'espère ?"
-    m "oh si si précisément toi"
+
+    show Mayden_annoyed at right :
     
+    inconnu "Oh si si précisément toi. Pourquoi tu te mets sur ma route ?"
+
+    b "C'est la rentrée ? Peut-être que tu ne l'avais pas remarqué ?"
     
+    "Au milieu de la tumulte de la rentrée se trouvait Binta et le jeune homme, leurs voix montant d'un cran à chaque rétorque et insulte."
+
+    "Les quelques élèves qui traînaient encore à pénétrer l'enceinte du collège s’étaient arrêtés pour observer la scène. Le murmure habituel des conversations avait laissé place à un silence tendu, seulement brisé par les échanges des deux adolescents."
+
+    inconnu "QUE CELA CESSE TOUT DE SUITE !"
+
+    "Enfin un surveillant était intervenu pour les séparer, terminant cette dispute aussi brusquement qu'elle avait commencé."
+
+    inconnu "Allez tout de suite rejoindre vos camarades, et je ne veux PLUS vous entendre."    
     
     
     
