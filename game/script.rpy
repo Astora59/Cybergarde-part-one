@@ -3,9 +3,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define b = Character("Binta")
+define b = Character("Binta", color="#BD93BD")
 define y = Character("Yanis")
-define m = Character("Maydan")
+define m = Character("Maydan", color="#E94F37")
 define inconnu = Character("???")
 
 
@@ -51,7 +51,9 @@ image Yanis_very_happy_afterThinking = "Yanis_very_happy_afterThinking.png"
 
 #backgrounds
 image bg_front_gate = "front-gate.jpg"
-
+image bg_school_corridor = "school_corridor_background.jpg"
+image bg_classroom_evening = "Classroom_01_evening.jpg"
+image bg_street_evening = "home_evening.png"
 
 # effects
 #screenshake
@@ -74,12 +76,18 @@ transform size_normal:
 #character positions 
 transform left: 
     xalign 0.0
+    yalign 0.3
     zoom (0.5)
 
 transform right: 
     xalign 1.0
+    yalign 0.3
     zoom (0.5)
 
+transform center: 
+    zoom (0.5)
+    yalign 0.3
+    xalign 0.5
 
 # The game starts here.
 
@@ -134,12 +142,12 @@ label start:
 
     "C'est en regardant en sa direction, qu'elle se rendit compte de sa trottinette électrique."
     
-    show Binta_annoyed at left :
+    show Binta_annoyed at left
 
     
     b "Mais ça va pas d'accélérer aussi vite aussi proche de l'entrée ? Et qui tu traites d'idiote ? Certainement pas moi j'espère ?"
 
-    show Mayden_annoyed at right :
+    show Mayden_annoyed at right
     
     inconnu "Oh si si précisément toi. Pourquoi tu te mets sur ma route ?"
 
@@ -153,15 +161,59 @@ label start:
 
     "Enfin un surveillant était intervenu pour les séparer, terminant cette dispute aussi brusquement qu'elle avait commencé."
 
-    inconnu "Allez tout de suite rejoindre vos camarades, et je ne veux PLUS vous entendre."    
+    inconnu "Allez tout de suite rejoindre vos camarades, et je ne veux PLUS vous entendre." 
+
+    "La dispute se termina aussi vite qu'elle ait commencé. Binta pouvait sentir le regard noir du garçon se posait sur elle."   
+
+    scene bg_school_corridor:
+        xalign 0.5  # Centre horizontalement
+        yalign 0.2  # Place plus haut verticalement
+        zoom 0.6
+    
+    "Les deux ados se dirigèrent vers l'enceinte du collège, séparé par quelques mètres. D'un seul coup, le jeune prit d'abord de l'avance, puis la parole."
+    
+    show Mayden_annoyed at center
+
+    m "Mon nom c'est Mayden, l'oublie jamais parce qu'on va se retrouver."
+
+    hide Mayden_annoyed
+
+    "Mayden partit en courant, probablement pour distancer Binta."
+
+
+    "Etait-ce une menace ? Devait-elle s'inquiéter ? Binta n'était pas sûre de ce qu'elle devait tirer de cette situation, Après tout ce n'était qu'une petite dispute à la rentrée."
     
     
+    "Dans tous les cas, il est temps de commencer les cours, l'adolescente dût se rendre dans la hall d'entrée afin de pouvoir voir quelle classe rejoindre."
+
+    "Quelle fut sa surprise, quand elle se rendit compte qu'elle a déjà fait la rencontre d'un de ses nouveaux camarades de classe ce matin..."
+
+    "Mais bon, il est temps de commencer cette terrible journée se dit Binta, et ainsi commença la rentrée."
+
+    scene bg_classroom_evening with fade:
+        xalign 0.5
+        yalign 0.2
+
+
+    "La journée se termina pour les étudiants du collège Victor Hugo, et Binta prépara ses affaires pour rentrer."
+    "Le soleil commençait doucement à rejoindre l'ouest et Binta préférait ne pas trop tarder, ses parents commenceraient à s'inquiéter sinon."
+
+    scene bg_street_evening with dissolve:
+        xalign 0.5
+        yalign 0.2
+        zoom 1.5
+
+    "Binta marchait seule, son sac à dos battant légèrement contre ses jambes à chaque pas. La journée avait été longue et elle n’avait qu’une hâte : retrouver la chaleur de sa maison."
     
+    "Autour d’elle, la rue était déserte. Les seules signes de vie étaient la lumière des maisons de la rue. Cependant elle pouvait sentir une présence l'observer."
+
+    "C'était une situation assez rare pour cette rue. Il est vrai que peu de personnes l'empruntent, mais au point qu'il n'ait personne ? C'est très singulier."
     
+    "Binta empressa le pas : que le pressentiment soit vrai ou faux elle n'avait pas vraiment envie de le savoir."
     
-    
-    
-    
+    "Elle se tourna brièvement vers l’arrière, les yeux scrutant l’ombre qui s’étendait derrière elle. Rien. Juste la rue déserte et le lointain bourdonnement des néons."
+
+    "Enfin arrivée devant chez elle"
     
     
     
