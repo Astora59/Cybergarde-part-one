@@ -1,30 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 192, in script
-    scene bg_classroom_evening with Dissolve :
-Exception: Expected transition to return a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x000000001d4c5f70>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000001d4c5910>}>
+  File "game/script.rpy", line 57, in script
+    image bg_bedroom_evening = ""
+Exception: An empty string cannot be used as a displayable.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 192, in script
-    scene bg_classroom_evening with Dissolve :
-  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 1361, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\exports\statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 1578, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 2666, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 2580, in instantiate_transition
-    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
-Exception: Expected transition to return a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x000000001d4c5f70>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000001d4c5910>}>
+  File "game/script.rpy", line 57, in script
+    image bg_bedroom_evening = ""
+  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\ast.py", line 924, in execute
+    renpy.exports.image(self.imgname, img)
+  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\exports\displayexports.py", line 73, in image
+    d = renpy.easy.displayable(d)
+  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\easy.py", line 117, in displayable
+    raise Exception("An empty string cannot be used as a displayable.")
+Exception: An empty string cannot be used as a displayable.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.2.24090902
 cybergarde part1 1.0
-Wed Jan 22 16:22:10 2025
+Fri Jan 24 11:46:55 2025

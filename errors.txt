@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 194: expected 'comma or end of line' not found.
-    $ renpy.pause(1.0, hard=True)  
-    ^
+File "game/script.rpy", line 250: expected statement.
+    3
+     ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Wed Jan 22 16:46:18 2025
+Fri Jan 24 16:19:56 2025
