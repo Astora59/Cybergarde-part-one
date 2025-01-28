@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 250: expected statement.
-    3
-     ^
+File "game/script.rpy", line 264: expected end of line
+    play music "music/Morning.mp3" loopE
+                                   ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Fri Jan 24 16:19:56 2025
+Tue Jan 28 10:46:58 2025

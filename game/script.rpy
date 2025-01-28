@@ -50,9 +50,15 @@ image Yanis_very_happy_afterThinking = "Yanis_very_happy_afterThinking.png"
 
 
 #backgrounds
+
+#classroom
 image bg_front_gate = "front-gate.jpg"
 image bg_school_corridor = "school_corridor_background.jpg"
+image bg_classroom_day = "Classroom_01_day.jpg"
 image bg_classroom_evening = "Classroom_01_evening.jpg"
+
+
+#road to school
 image bg_street_evening = "someplace_usa_afternoon.jpg"
 image bg_bedroom_evening = "room_dusk_light_on.jpg"
 
@@ -176,7 +182,7 @@ label start:
 
     "La dispute se termina aussi vite qu'elle ait commencé. Binta pouvait sentir le regard noir du garçon se posait sur elle."   
     play music "music/Morning.mp3"
-    scene bg_school_corridor:
+    scene bg_school_corridor with dissolve:
         xalign 0.5  # Centre horizontalement
         yalign 0.2  # Place plus haut verticalement
         zoom 0.6
@@ -237,7 +243,7 @@ label start:
     "Elle retira ses baskets rapidement, les laissant dépareillées près du tapis de l’entrée, puis attrapa une pomme du panier de fruits sur le comptoir de la cuisine."
     "L'inquiétude qu'elle ressentit avant d'arriver chez elle s'était rapidement dissipée. Sa maison était un lieu sûr pour elle, que personne ne pouvait pénétrer."
     "Elle monta dans sa chambre, ses pas résonnant légèrement sur le bois, créant une petite mélodie familière."
-    "Elle vivait avec ses parents et son grand frère. Son père se trouvait dans le salon et regarder probablement un programme sur les aliens. Sa mère quant à elle aimait s'occuper de la cuisine en écoutant de la musique, avant que ses enfants ne rentrent de l'école."
+    "Elle vivait avec ses parents et son grand frère. Son père se trouvait dans le salon et regarder probablement un programme sur les aliens. Sa mère quant à elle aimait s'occuper de la cuisine en écoutant de la musique."
     "Elle se laissa tomber sur son lit avec un soupir de soulagement, le poids du monde semblant s’échapper de ses épaules. L’odeur rassurante de sa lessive emplit l’air. "
     "Son téléphone, posé à côté d'elle, éclaire légèrement sa chambre qui commence à inviter la pénombre. Elle décida de le prendre et d'aller sur Kokot."
     "Son pouce glisse rapidement sur l’écran, faisant défiler un flux ininterrompu de vidéos courtes. Tantôt un chat maladroit, tantôt une danse virale qu’elle se promet d’essayer plus tard."
@@ -257,14 +263,46 @@ label start:
     
     play music "music/Morning.mp3" loop
     
-    "Il est temps de reprendre l"
+    "L'esprit encore partiellement endormi, Binta se rendit au collège pour commencer une nouvelle journée."
+    "Les rayons du soleil chauffèrent doucement ses joues et la ramèna petit à petit à ses sens."
+    "D'autres étudiants semblèrent la regarder. On ne peut plus souffler un petit peu avant de rentrer ?"
+    "Binta se rendit en classe."
+
+    scene bg_classroom_day with dissolve:
+        xalign 0.5
+        yalign 0.2
     
     
+
+    "\"Quel brouhaha\" se dit Binta. Toute la classe était arrivée avant elle, et cette dernière ne voulait pas faire de vagues. "
+    "Binta s'installa rapidement à la place que son professeur principal lui avait attitré."
+    "Malgré sa furtive exécution de l'entrée à son bureau, elle pouvait sentir les regards se posaient sur elle."
+    "Des chuchotements entrecoupés de rires faisaient écho dans la classe."
+    "Chaque chuchotement et rire semblaient renforcer les regards sur Binta. Mayden quant à lui, semblait l'ignorer."
+    inconnu "Sortez vos cahiers et taisez-vous, le cours commence !"
+    "Sans que la plupart des élèves ne s'en aperçoivent, leur professeur était arrivé et s'était installé."
+    "Le sentiment de malaise que ressentait Binta s'estompa peu à peu, les regards concentrés sur ce que le professeur disait."
+    "Qu'a-t-il bien pu se passer ? Binta n'arrivait pas à se concentrer et son esprit fit tous les scénario possibles."
+
+    scene bg_school_corridor with dissolve:
+        xalign 0.5  # Centre horizontalement
+        yalign 0.2  # Place plus haut verticalement
+        zoom 0.6
     
     
+    "La cloche retentit dans les classes et les couloirs de l'école, transformant les couloirs en un melting pot de bruits et de gens."
+    "Binta resta en retrait, prenant le temps de ranger ses affaires avec une lenteur calculée, espérant éviter la foule qui s’agglutine dans le couloir."
+    "En sortant de la classe, elle put apercevoir un groupe de filles de sa classe la regarder."
+    "Elle pouvait voir qu'elles se retenaient de rire, ou du moins essayer. C’est une cascade de rires, étouffés, retenus, comme si tout le monde essayait de ne pas éclater trop fort."
     
-    
-    
+    show Binta_anxious at center
+    b "Je vois que tout le monde me rigole, qu'est-ce qu'il se passe ?"
+    "Les rires ne pouvaient plus se contenir : l'une des filles commença à se tordre de rire, incapable de se retenir davantage."
+
+    play music "music/Echoes_of_Time.mp3" loop
+    inconnu "Mais enfin tu comptes tout de même pas faire l'innocente ? On t'a TOUS vu le faire !"
+    inconnu "Ouais c'est vrai ça, j'arrive pas à croire que quelqu'un ferait ça dans notre classe franchement !"
+    "De quoi parlait-il ? Binta ne semblait pas se rappeler d'avoir fait quoique ce soit qui pourrait attirer les moqueries, que se passe-t-il bon sang !?"
     
     
     
