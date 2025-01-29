@@ -6,6 +6,7 @@
 define b = Character("Binta", color="#BD93BD")
 define y = Character("Yanis")
 define m = Character("Maydan", color="#E94F37")
+define s = Character("M.Serani", color="#6FFFE9")
 define inconnu = Character("???")
 
 
@@ -25,7 +26,7 @@ image Binta_very_happy = "Binta_very_happy.png"
 
 # Mayden
 image Mayden_afraid = "Mayden_afraid.png"
-image Mayden_angry = "Mayden_angry.png"
+image Maydan_angry = "Mayden_angry.png"
 image Mayden_annoyed = "Mayden_annoyed.png"
 image Mayden_anxious = "Mayden_anxious.png"
 image Mayden_default = "Mayden_default.png"
@@ -47,6 +48,10 @@ image Yanis_thinking = "Yanis_thinking.png"
 image Yanis_very_happy = "Yanis_very_happy.png"
 image Yanis_very_happy_afterThinking = "Yanis_very_happy_afterThinking.png"
 
+#Mr.Serani
+image Serani_default = "serani_default.png"
+image Serani_angry = "serani_angry.png"
+
 
 
 #backgrounds
@@ -56,6 +61,7 @@ image bg_front_gate = "front-gate.jpg"
 image bg_school_corridor = "school_corridor_background.jpg"
 image bg_classroom_day = "Classroom_01_day.jpg"
 image bg_classroom_evening = "Classroom_01_evening.jpg"
+image bg_director_office = "Anime_Office_Background.png"
 
 
 #road to school
@@ -191,11 +197,11 @@ label start:
     
     show Mayden_annoyed at center
 
-    m "Mon nom c'est Mayden, l'oublie jamais parce qu'on va se retrouver."
+    m "Mon nom c'est Maydan, l'oublie jamais parce qu'on va se retrouver."
 
     hide Mayden_annoyed
 
-    "Mayden partit en courant, probablement pour distancer Binta."
+    "Maydan partit en courant, probablement pour distancer Binta."
 
 
     "Etait-ce une menace ? Devait-elle s'inquiéter ? Binta n'était pas sûre de ce qu'elle devait tirer de cette situation, Après tout ce n'était qu'une petite dispute à la rentrée."
@@ -212,8 +218,9 @@ label start:
         yalign 0.2
     
 
-    "La journée se termina pour les étudiants du collège Victor Hugo, et Binta prépara ses affaires pour rentrer."
+    "La journée se termina pour les étudiants du collège Hector Vugo, et Binta prépara ses affaires pour rentrer."
     "Le soleil commençait doucement à rejoindre l'ouest et Binta préférait ne pas trop tarder, ses parents commenceraient à s'inquiéter sinon."
+    "Elle avait l'habitude de sortir en douce le soir pour prendre l'air, jusqu'à que ses parents l'attrapèrent la main dans le sac."
 
     scene bg_street_evening with dissolve:
         xalign 0.5
@@ -233,7 +240,7 @@ label start:
     
     
     
-    play music "music/Space Jazz.mp3"
+    play music "music/Study and Relax.mp3"
     scene bg_bedroom_evening with dissolve: 
         xalign 0.5
         yalign 0.2
@@ -263,9 +270,10 @@ label start:
     
     play music "music/Morning.mp3" loop
     
-    "L'esprit encore partiellement endormi, Binta se rendit au collège pour commencer une nouvelle journée."
+    "L'esprit encore partiellement engourdi, Binta se rendit au collège pour commencer une nouvelle journée."
     "Les rayons du soleil chauffèrent doucement ses joues et la ramèna petit à petit à ses sens."
     "D'autres étudiants semblèrent la regarder. On ne peut plus souffler un petit peu avant de rentrer ?"
+    "Cela faisait déjà quelques jours depuis la rentrée, et Binta semblait s'être bien intégré dans sa classe. Elle discutait avec quelques élèves, entre les cours."
     "Binta se rendit en classe."
 
     scene bg_classroom_day with dissolve:
@@ -278,7 +286,7 @@ label start:
     "Binta s'installa rapidement à la place que son professeur principal lui avait attitré."
     "Malgré sa furtive exécution de l'entrée à son bureau, elle pouvait sentir les regards se posaient sur elle."
     "Des chuchotements entrecoupés de rires faisaient écho dans la classe."
-    "Chaque chuchotement et rire semblaient renforcer les regards sur Binta. Mayden quant à lui, semblait l'ignorer."
+    "Chaque chuchotement et rire semblaient renforcer les regards sur Binta. Maydan quant à lui, semblait l'ignorer."
     inconnu "Sortez vos cahiers et taisez-vous, le cours commence !"
     "Sans que la plupart des élèves ne s'en aperçoivent, leur professeur était arrivé et s'était installé."
     "Le sentiment de malaise que ressentait Binta s'estompa peu à peu, les regards concentrés sur ce que le professeur disait."
@@ -290,23 +298,140 @@ label start:
         zoom 0.6
     
     
-    "La cloche retentit dans les classes et les couloirs de l'école, transformant les couloirs en un melting pot de bruits et de gens."
+    "La cloche retentit dans les classes et les couloirs de l'école, transformant les couloirs en un melting pot de bruits et d'élèves."
     "Binta resta en retrait, prenant le temps de ranger ses affaires avec une lenteur calculée, espérant éviter la foule qui s’agglutine dans le couloir."
     "En sortant de la classe, elle put apercevoir un groupe de filles de sa classe la regarder."
     "Elle pouvait voir qu'elles se retenaient de rire, ou du moins essayer. C’est une cascade de rires, étouffés, retenus, comme si tout le monde essayait de ne pas éclater trop fort."
     
     show Binta_anxious at center
-    b "Je vois que tout le monde me rigole, qu'est-ce qu'il se passe ?"
+    b "Je vois que tout le monde me regarde, qu'est-ce qu'il se passe ?"
     "Les rires ne pouvaient plus se contenir : l'une des filles commença à se tordre de rire, incapable de se retenir davantage."
 
-    play music "music/Echoes_of_Time.mp3" loop
+    play music "music/Echoes_of_Time.mp3" fadeout 1.0 loop
     inconnu "Mais enfin tu comptes tout de même pas faire l'innocente ? On t'a TOUS vu le faire !"
     inconnu "Ouais c'est vrai ça, j'arrive pas à croire que quelqu'un ferait ça dans notre classe franchement !"
     "De quoi parlait-il ? Binta ne semblait pas se rappeler d'avoir fait quoique ce soit qui pourrait attirer les moqueries, que se passe-t-il bon sang !?"
+    inconnu "Puisqu'il faut en arriver là... Cette vidéo ne te dit rien ?"
+    "La jeune sorta son téléphone pour ensuite lancer une vidéo sur Kokot."
+    "Sur cette dernière, elle voit une version d’elle-même taguer la porte d'une maison avec un énorme graffiti rouge sang : "
+    "\"GROS NUL !\""
+    "L’image est claire, trop claire. Elle regarde avec horreur \"elle-même\" rire et faire un clin d'œil à la caméra avant de s'enfuir en courant."
+    "Comment était-ce possible ? Jamais Binta n'aurait fait quoique ce soit de la sorte."
+    "Ce n’est pas elle. Elle le sait. Mais… c’est son visage, sa voix. Elle entend même son propre rire. Les commentaires sous la vidéo fusent :"
+    "\"{i}Jamais cru qu’elle ferait un truc pareil.\"{/i}"
+    "\"{i}OMG, elle est finie.\"{/i}"
+    "\"{i}Vous savez c'est qui ?\"{/i}"
+    "Binta décide de regarder le nombre de vues : plus de 12000 vues."
+    "La vidéo est en train de gagner rapidement en popularité : ses parents, son frère, ses voisins, tous auraient pu voir la vidéo."
     
+    show Binta_afraid at center
+    b "Je peux vous assurer que ce n'est pas moi ! Jamais je ne me permettrai de faire ça, encore moins sur la porte de quelqu'un !"
+    inconnu "Ca ne sert à rien de te justifier ma grande, on te voit clairement le faire, c'est bien toi !"
+    "Avant que Binta puisse rétorquer, une voix grave l'appela."
+    s "Binta, je veux te voir dans mon bureau MAINTENANT."
+    "Il s'agissait de nul autre que le directeur de Hector Vugo, M.Serani."
+    "Les murmures éclatèrent aussitôt dans les couloirs : \"{i}C’est à cause de la vidéo, c’est sûr.\"{/i}"
+    "Elle pouvait aussi entendre : \"{i}Moi, je savais qu’elle était bizarre.\"{/i}"
+    "La personne qui a prononcé cette phrase ne l'a connaissait même pas..."
     
+    scene bg_director_office with fade:
+        xalign 0.5  # Centre horizontalement
+        yalign 0.8  # Place plus haut verticalement
+        zoom 2.5
+
+    play music "music/Covert_Affair.mp3" fadeout 1.0 loop
     
+    "Le bureau du directeur était plutôt étroit et opressant, on aurait dit que l'agencement de la pièce était conçu pour la confrontation."
+    "Monsieur Serani, un homme aux cheveux grisonnants et à l’air sérieux, est assis derrière son bureau."
+    show serani_default at right
+    s "Assieds-toi, Binta."
+    "Elle s’exécuta, ses mains moites posées sur ses genoux."
+    s "Tu sais pourquoi tu es ici ?"
+
+    show Binta_anxious at left
+    b "J’imagine que c’est à cause de cette vidéo…"
+    s "Exactement."
+    "Il tourna l’écran sur son bureau vers elle. Le visage de Binta fut figé en train de taguer un mur."
+    s "Peux-tu m’expliquer ce qu’on voit là ? Cette vidéo tourne en boucle dans l’école depuis hier soir. Les professeurs sont outrés, et certains élèves disent t’avoir reconnue."
+    "Binta sent les larmes monter, mais elle refuse de pleurer."
+    show Binta_afraid at left
+    hide Binta_anxious
+    b "Ce n’est pas moi ! Je n’ai jamais fait ça, je vous jure ! Quelqu’un a truqué cette vidéo."
+    s "Truqué, dis-tu ? Ce que je vois ici est très réaliste. Et puis, pourquoi quelqu’un te viserait spécifiquement ?"
+    "Elle ouvrit la bouche, mais aucun son n’en sort. Qui aurait fait ça, et pourquoi ? Elle-même n’a pas la réponse."
+    b "Mais… ce n’est pas moi ! Vous devez me croire, monsieur Serani, je n’ai rien fait !"
+    s "Ecoute Binta... Je ne dis pas que tu es la personne présente dans cette situation, mais si c'est bien le cas il y aura de lourdes conséquences."
+    s "Qui plus est, j'ai un témoin qui t'a vu taguer cette porte."
+    "Un témoin ? Comment était-ce possible puisque Binta n'a rien fait ?"
+    "Avant de pouvoir trouver une réponse concluante, une personne entra dans le bureau du directeur."
+    show Binta_afraid at left
+    show serani_default at center
+    show Mayden_default at right
+    m "Pardon pour l'attente M.Serani."
+    "C'était Maydan qui rentra dans la pièce."
+    "Comment était-ce possible ? Que savait-il ? Ou bien était-il impliqué dans ce montage ?"
+    s "Bien Maydan merci d'être venu, peux-tu m'expliquer à nouveau ce que tu sais ?"
+    show Mayden_explaining at right
+    hide serani_default
+    hide Binta_afraid
+    hide Mayden_default
+    m "Bien monsieur... Tout a commencé à la rentrée, où j'ai bousculé par mégarde Binta. Elle a tout de suite été très énervé, et m'a menacé de me frapper."
+    m "Au début je pensais à une simple dispute, mais c'est quand j'ai entendu des bruits étranges et des rires à l'entrée de ma maison que j'ai compris que c'était Binta."
+    s "Es-tu sûr que c'était elle ?"
+    m "Oui monsieur, j'ai pu apercevoir par la fenêtre Binta courir pour ne pas se faire attraper."
+    "Binta était sous le choc : non seulement tout était faux, elle comprit assez vite que la personne derrière tout ça était bien Maydan."
+
+    show Binta_angry at left
+    b "Mensonges... TOUT est FAUX ! Ca ne s'est absolument pas passé comme ça !"
+    b "Tu m'as bousculé avec ta trotinnette et après ça tu m'as menacé !"
+    hide Mayden_explaining
+    show Mayden_annoyed at right
+    m "Tu devrais avoir honte de mentir à un adulte. Et puis pourquoi je ferais ça à ma propre porte d'entrée ?"
+    hide Binta_angry
+    hide Mayden_annoyed
+    show serani_angry at center
+    s "Cela suffit ! Que je ne vous entende plus parler."
+    "Binta et Maydan fûrent tous les deux surpris par la voix grave et puissante du directeur. Son aura dans le moment exultait d'autorité."
+    s "Sachez que l'affaire sera bien enquêté, les sanctions seront graves pour l'un comme pour l'autre quand j'aurais le fin mot de l'histoire. Maintenant filez en classe."
+    "Binta et Maydan se rendirent donc vers la sortie du bureau, Maydan en premier, qui referma avec violence la porte derrière Binta."
+
+
+    scene bg_school_corridor with dissolve:
+        xalign 0.5  # Centre horizontalement
+        yalign 0.2  # Place plus haut verticalement
+        zoom 0.6
+
+    "Pourquoi agir de façon aussi néfarieuse ? Binta ne méritait clairement pas ce qu'il lui arrivait."
+    "Maydan...Ce rat ! Comment avait-il pu faire ça !? La colère sourde que ressentait Binta la rendit aveugle aux nombreux regards et moqueries silencieuses qu'elle subissait."
+    "Dans tous les cas cette affaire sera réglée et on connaîtra le fin mot de l'histoire. Binta décida de rentrer chez elle."
     
+    scene bg_street_evening with dissolve:
+        xalign 0.5
+        yalign 0.2
+    play music "music/Evening.mp3"
+
+    "Binta n'avait qu'une hâte : de rentrer et s'enfermer dans sa chambre."
+    "La révélation du montage l'avait épuisé mentalement, et elle n'avait pas la force de faire quoi que ce soit."
+    "Comment avait-il pu faire un montage aussi bien réalisé ? Il est vrai que si Binta ne connaissait pas la personne sur la vidéo, elle-même aurait pu croire qu'il n'y avait aucun trucage."
+    "Peut-être l'a-t-on prise en photo ou en vidéo quand elle ne le savait pas ? Elle se rappela qu'elle ressentit des yeux l'observer il y a quelques jours de cela."
+    "Elle irait se renseigner en rentrant, se disait-elle. Il fallait aussi en parler à ses parents, qui risquaient de tomber sur la vidéo eux-aussi."
+
+
+
+    
+    scene bg_bedroom_evening with dissolve: 
+        xalign 0.5
+        yalign 0.2
+    play music "music/Study and Relax.mp3"
+
+    "Arrivée chez elle, Binta expliqua aussitôt la situation à ses parents. Les deux ne s'y connaissaient pas assez en technologie, mais avait foi en leur fille."
+    "Cela rassura un peu l'adolescente de savoir qu'elle n'était pas seule dans cette situation. Bien que pour l'instant, elle était toujours très inquiète."
+    "Comme à son habitude, elle prit une pomme du panier et enjamba les marches des escaliers pour atteindre sa chambre."
+    "Allongée sur son lit, elle décida de prendre son téléphone pour regarder Kokot et voir si la vidéo était toujours en ligne."
+    
+    play music "music/Echoes_of_Time.mp3"
+    "Toujours en ligne avec des vues impressionnants... Mais le pire, c'est qu'il y avait de nouvelles vidéos."
+    "Elles proviennent de plusieurs comptes et ne sont plus limités qu'à un seul."
     
     
     

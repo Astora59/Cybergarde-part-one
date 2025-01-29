@@ -1,24 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 57, in script
-    image bg_bedroom_evening = ""
-Exception: An empty string cannot be used as a displayable.
+  File "game/script.rpy", line 380, in script
+    m "Oui monsieur, j'ai pu apercevoir par la fenêtre Binta courir pour ne pas se faire attraper. 100%"
+ValueError: incomplete format
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 57, in script
-    image bg_bedroom_evening = ""
-  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\ast.py", line 924, in execute
-    renpy.exports.image(self.imgname, img)
-  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\exports\displayexports.py", line 73, in image
-    d = renpy.easy.displayable(d)
-  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\easy.py", line 117, in displayable
-    raise Exception("An empty string cannot be used as a displayable.")
-Exception: An empty string cannot be used as a displayable.
+  File "game/script.rpy", line 380, in script
+    m "Oui monsieur, j'ai pu apercevoir par la fenêtre Binta courir pour ne pas se faire attraper. 100%"
+  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\exports\sayexports.py", line 121, in say
+    what = what % tag_quoting_dict
+ValueError: incomplete format
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.2.24090902
 cybergarde part1 1.0
-Fri Jan 24 11:46:55 2025
+Wed Jan 29 16:40:24 2025

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 264: expected end of line
-    play music "music/Morning.mp3" loopE
-                                   ^
+File "game/script.rpy", line 432: play requires a channel
+    play 
+         ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Tue Jan 28 10:46:58 2025
+Wed Jan 29 17:07:23 2025
