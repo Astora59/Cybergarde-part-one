@@ -1,24 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 380, in script
-    m "Oui monsieur, j'ai pu apercevoir par la fenêtre Binta courir pour ne pas se faire attraper. 100%"
-ValueError: incomplete format
+  File "game/script.rpy", line 11, in script
+    define Ali = Character("Ali", color)
+  File "game/script.rpy", line 11, in <module>
+    define Ali = Character("Ali", color)
+TypeError: type() takes 1 or 3 arguments
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 380, in script
-    m "Oui monsieur, j'ai pu apercevoir par la fenêtre Binta courir pour ne pas se faire attraper. 100%"
-  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 2573, in execute
-    Say.execute(self)
-  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\yamin\Downloads\renpy-8.3.2-sdk\renpy\exports\sayexports.py", line 121, in say
-    what = what % tag_quoting_dict
-ValueError: incomplete format
+  File "game/script.rpy", line 11, in script
+    define Ali = Character("Ali", color)
+  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\ast.py", line 2235, in execute
+    self.set()
+  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\ast.py", line 2249, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 11, in <module>
+    define Ali = Character("Ali", color)
+  File "C:\Users\yamin\Documents\renpy-8.3.2-sdk\renpy\character.py", line 1778, in Character
+    return type(kind)(name, kind=kind, **properties)
+TypeError: type() takes 1 or 3 arguments
 
-Windows-10-10.0.22631 AMD64
+Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.2.24090902
 cybergarde part1 1.0
-Wed Jan 29 16:40:24 2025
+Fri Jan 31 14:03:00 2025

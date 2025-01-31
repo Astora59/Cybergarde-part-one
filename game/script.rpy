@@ -8,6 +8,7 @@ define y = Character("Yanis")
 define m = Character("Maydan", color="#E94F37")
 define s = Character("M.Serani", color="#6FFFE9")
 define inconnu = Character("???")
+define Ali = Character("Ali", color="#B4D6D3")
 
 
 # declare characters sprites
@@ -52,6 +53,8 @@ image Yanis_very_happy_afterThinking = "Yanis_very_happy_afterThinking.png"
 image Serani_default = "serani_default.png"
 image Serani_angry = "serani_angry.png"
 
+#ali
+image ali_default = "ali_default.png"
 
 
 #backgrounds
@@ -332,7 +335,7 @@ label start:
     "Il s'agissait de nul autre que le directeur de Hector Vugo, M.Serani."
     "Les murmures éclatèrent aussitôt dans les couloirs : \"{i}C’est à cause de la vidéo, c’est sûr.\"{/i}"
     "Elle pouvait aussi entendre : \"{i}Moi, je savais qu’elle était bizarre.\"{/i}"
-    "La personne qui a prononcé cette phrase ne l'a connaissait même pas..."
+    "La personne qui a prononcé cette phrase ne la connaissait même pas..."
     
     scene bg_director_office with fade:
         xalign 0.5  # Centre horizontalement
@@ -414,6 +417,7 @@ label start:
     "La révélation du montage l'avait épuisé mentalement, et elle n'avait pas la force de faire quoi que ce soit."
     "Comment avait-il pu faire un montage aussi bien réalisé ? Il est vrai que si Binta ne connaissait pas la personne sur la vidéo, elle-même aurait pu croire qu'il n'y avait aucun trucage."
     "Peut-être l'a-t-on prise en photo ou en vidéo quand elle ne le savait pas ? Elle se rappela qu'elle ressentit des yeux l'observer il y a quelques jours de cela."
+    "Ou bien était-ce grâce aux photos qu'elle posta sur Internet ? C'est vrai qu'elles sont facilement accessibles..."
     "Elle irait se renseigner en rentrant, se disait-elle. Il fallait aussi en parler à ses parents, qui risquaient de tomber sur la vidéo eux-aussi."
 
 
@@ -429,13 +433,89 @@ label start:
     "Comme à son habitude, elle prit une pomme du panier et enjamba les marches des escaliers pour atteindre sa chambre."
     "Allongée sur son lit, elle décida de prendre son téléphone pour regarder Kokot et voir si la vidéo était toujours en ligne."
     
-    play music "music/Echoes_of_Time.mp3"
+    play music "music/Echoes_of_Time.mp3" fadeout 1.0 loop
     "Toujours en ligne avec des vues impressionnants... Mais le pire, c'est qu'il y avait de nouvelles vidéos."
     "Elles proviennent de plusieurs comptes et ne sont plus limités qu'à un seul."
+    "On y voit de tout : Binta qui tague des bâtiments et des véhicules, qui renverse des poubelles, qui insulte des gens de sa classe..."
+    "Une vidéo retourna particulièrement l'estomac de l'adolescente."
+    "On pouvait y voir Binta, un chaton à la main."
+    "Elle regarda la caméra, puis sourit: la vidéo se coupant pour laisser la place à des cris et des bruits écœurants"
+    "La vidéo fut suffisamment horrible pour qu'une boule d'angoisse monte dans sa gorge, son cœur tambourine à un rythme effréné."
+    "Elle jeta son téléphone d’un coup sec, mais il est déjà trop tard : le choc est là, l’image gravée dans son esprit comme une brûlure."
+    "Les ombres de sa chambre, qui d’ordinaire lui paraissaient familières, lui semblent soudain hostiles."
+    "Binta sent des larmes monter, mais elle se retient, envahie par une sensation de honte mêlée de peur."
+    "Comment pouvait-on faire quelque chose d'aussi horrible ? Et surtout comment Kokot pouvait-il laisser n'importe qui poster ce genre de choses ?"
+    "Elle sentit monter en elle un profond malaise, la sorte qui s'agrippe à vos tripes telle une charogne."
+    "Par une curiosité auto-destructrice, elle décida d'aller regarder les commentaires."
+    "Elle hésite une seconde, son doigt suspendu au-dessus de l’écran. Elle sait qu’elle ne devrait pas regarder, mais la curiosité et une sombre impulsion l’emportèrent."
+    "Binta sentit sa gorge se nouer et son souffle devenir erratique. La vague de haine qu'elle reçut était beaucoup trop important pour la jeune adolescente."
+    "\"{i}Trop facile de faire l’innocente maintenant, mais on te connaît et tu vas le payer.\"{/i}"
+    "\"{i}Sa pauvre famille, elle doit les décevoir grave.\"{/i}"
+    "\"{i}Si c’était ma sœur, je serais mort de honte. Elle devrait disparaître, sérieux.\"{/i}"
+    "Elle laisse échapper un sanglot étouffé, étouffant presque un cri."
+    "Ces nombreuses vidéos l'exposaient à des milliers de personnes qui ne la connaissait même pas mais qui lui souhaiter du malheur."
+    "Ce n'était pourtant pas les noms qu'elle ne reconnaissait pas qui l'a choqué."
+    "Elle reconnut certains noms parmi les comptes qui l'attaqua. Des personnes de son collège, voire même de sa classe."
+    "Sans qu'elle s'en rende compte à travers ses larmes, elle avait reçu une multitude de messages sur Kokot, tout aussi horrible que les commentaires."
+    "L'un  des messages l'ayant particulièrement marqué venait de son amie, qui lui envoya un message quelques jours plus tôt."
+    "\"{i}Mieux vaut que tu ne viennes pas en cours.\"{/i}"
+    "Le monde en dehors de sa chambre semble lointain, inaccessible."
+    "Tout ce qui existe pour elle à cet instant, c’est la douleur de ces commentaires, la peur qu’ils soient ce que les gens pensent vraiment d’elle."
+    "et l’impression qu’elle ne pourra jamais effacer cette vidéo, ni ce qu’elle a provoqué..."
+
+
+
+
+
+    "son frère, qui entendit le grabuge dans la chambre de sa soeur, décida de rentrer."
+    show ali_default at center
+    Ali "Eh oh qu'est-ce qu'il se passe ici ? Pourquoi tu fais tout un vacarme ?"
+    "Binta n'a pas su contenir ses larmes lorsque son frère débarqua soudainement dans sa chambre. Toutes ces émotions devaient bien redescendre un moment ou un autre, de toute manière."
+    "Elle expliqua tout en détail à son frère, de la bousculade avec Maydan, aux montages d'elle faisant des actions horribles."
+
+
+    scene bg_bedroom_evening with fade: 
+        xalign 0.5
+        yalign 0.2
+    play music "music/Study and Relax.mp3"
     
+    show ali_default at center
+    Ali "D'accord, j'ai compris la situation..."
+    "Son frère était plus âgé qu'elle de seulement deux ans, mais il s'y connaissait déjà un rayon en technologie. Il passait le plus clair de son temps dans sa chambre à créer des programmes."
+    Ali "Binta… écoute-moi. Ce que t’as vu là, c’est ce qu’on appelle un deep fake. T’en as déjà entendu parler ?"
+    "Elle secoua la tête sans le regarder, toujours accablée."
+    Ali "C’est une technologie qui utilise l’intelligence artificielle pour coller le visage de quelqu’un sur une vidéo ou des images d’une autre personne."
+    Ali "Ça peut paraître hyper réaliste, mais c’est complètement faux. Ce n’est pas toi, d’accord ? C’est une manipulation."
+    "Elle relève la tête, ses yeux encore embués de larmes."
+    b "Mais… mais les gens y croient ! Ils partagent ça partout ! Et maintenant, tout le monde pense que c’est moi dans cette… cette vidéo horrible…"
+    Ali "Je sais que c’est super dur, Binta, mais écoute-moi bien : ce n’est pas ta faute. Les gens qui font ce genre de choses sont des monstres."
+    Ali "Il faut qu’on réagisse vite, OK ? On peut signaler cette vidéo, contacter TikTok, et même porter plainte. Mais ce qui est sûr, c’est que personne qui te connaît vraiment ne croira à ces bêtises."
+    "Il lui tend son téléphone et la prend dans ses bras, la serrant contre lui avec une douceur fraternelle. Binta laisse enfin échapper un soupir."
+
+
+
+
+    scene bg_classroom_day with fade:
+        xalign 0.5
+        yalign 0.2
+    play music "music/Morning.mp3" fadeout 1.0 loop
     
+    "Une journée comme une autre."
+    "C'est ce que Yanis se serait dit si Binta n'était pas absente depuis déjà deux semaines."
+    "Les vidéos qui ont circulé n'ont pas forcément détruit la réputation de Binta, puisque les collégiens ont fini par comprendre qu'il s'agissait de deep fake."
+    "Cependant tout le monde ne cherche pas à connaître la vérité : un petit groupe continua à créer des deep fake et inventer des mensonges sur Binta : on appelle ça des fake news."
+    "Parfois on ne cherche pas forcément LA vérité; seulement celle qui nous convient."
+    "D'autres préférent fermer leur coeur à la vérité: tout le monde n'est pas un harceleur, mais le silence est tout aussi dangereux."
+    "Pendant la pause, Yanis observe le petit comité qui s'était formé pendant l'absence de Binta."
+    "On pouvait les entendre parler d'elle: des idées de deep fake, de fausses rumeurs à répandre... A leur tête se trouvait Maydan."
     
+    show Mayden_default_happy at center
+    m "Vraiment Sarah ta vidéo est excellente ! On dirait vraiment que Binta était chauve !"
     
+    hide Mayden_default_happy
+    "Le groupe se mit à rire aux éclats, tandis que chaque petits groupes "
+
+
     
     
     

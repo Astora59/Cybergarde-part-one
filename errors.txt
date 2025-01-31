@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 432: play requires a channel
-    play 
-         ^
+File "game/script.rpy", line 11: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+    define Ali = Character("Ali", color="#B4D6D3)
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Wed Jan 29 17:07:23 2025
+Fri Jan 31 14:03:37 2025
