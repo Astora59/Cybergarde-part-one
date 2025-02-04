@@ -71,8 +71,8 @@ image bg_director_office = "Anime_Office_Background.png"
 image bg_street_evening = "someplace_usa_afternoon.jpg"
 image bg_bedroom_evening = "room_dusk_light_on.jpg"
 
-
-#MUSIC
+#ending
+image bg_black_screen = "black.jpg"
 
 
 # effects
@@ -264,7 +264,7 @@ label start:
     "A vrai dire la vidéo n'était pas si drôle que ça, mais ce genre de petits mensonges ne font jamais de mal non ?"
     "D'ailleurs, la vidéo l'a sorti de son cocon. Ca lui a fait penser qu'aucun de ses camarades n'a pris l'initiative de créer un groupe de classe."
     "C'est assez courant d'en créer un, cela permet de coordonner la classe pour les devoirs, la prise de note en cours et ça favorise la cohésion de groupe."
-    "\"On verra plus tard\" se disa-elle, ferme les yeux, laissant son esprit divaguer. En quelques instants seulement, elle rejoigna les bras de Morphée."
+    "\"On verra plus tard\" se dit-elle, ferme les yeux, laissant son esprit divaguer. En quelques instants seulement, elle rejoigna les bras de Morphée."
     
     scene bg_front_gate with fade:
         xalign 0.5  # Centre horizontalement
@@ -328,6 +328,7 @@ label start:
     "La vidéo est en train de gagner rapidement en popularité : ses parents, son frère, ses voisins, tous auraient pu voir la vidéo."
     
     show Binta_afraid at center
+    hide Binta_anxious
     b "Je peux vous assurer que ce n'est pas moi ! Jamais je ne me permettrai de faire ça, encore moins sur la porte de quelqu'un !"
     inconnu "Ca ne sert à rien de te justifier ma grande, on te voit clairement le faire, c'est bien toi !"
     "Avant que Binta puisse rétorquer, une voix grave l'appela."
@@ -439,13 +440,13 @@ label start:
     "On y voit de tout : Binta qui tague des bâtiments et des véhicules, qui renverse des poubelles, qui insulte des gens de sa classe..."
     "Une vidéo retourna particulièrement l'estomac de l'adolescente."
     "On pouvait y voir Binta, un chaton à la main."
-    "Elle regarda la caméra, puis sourit: la vidéo se coupant pour laisser la place à des cris et des bruits écœurants"
+    "Elle regarda la caméra, puis sourit: la vidéo se coupant pour laisser la place à des cris et des bruits écœurants."
     "La vidéo fut suffisamment horrible pour qu'une boule d'angoisse monte dans sa gorge, son cœur tambourine à un rythme effréné."
-    "Elle jeta son téléphone d’un coup sec, mais il est déjà trop tard : le choc est là, l’image gravée dans son esprit comme une brûlure."
+    "Elle jeta son téléphone d’un coup sec, mais il est déjà trop tard : le choc est là, le son gravée dans son esprit comme une brûlure."
     "Les ombres de sa chambre, qui d’ordinaire lui paraissaient familières, lui semblent soudain hostiles."
     "Binta sent des larmes monter, mais elle se retient, envahie par une sensation de honte mêlée de peur."
     "Comment pouvait-on faire quelque chose d'aussi horrible ? Et surtout comment Kokot pouvait-il laisser n'importe qui poster ce genre de choses ?"
-    "Elle sentit monter en elle un profond malaise, la sorte qui s'agrippe à vos tripes telle une charogne."
+    "Elle sentit monter en elle un profond malaise, la sorte qui s'agrippe à vos tripes tel un parasite."
     "Par une curiosité auto-destructrice, elle décida d'aller regarder les commentaires."
     "Elle hésite une seconde, son doigt suspendu au-dessus de l’écran. Elle sait qu’elle ne devrait pas regarder, mais la curiosité et une sombre impulsion l’emportèrent."
     "Binta sentit sa gorge se nouer et son souffle devenir erratique. La vague de haine qu'elle reçut était beaucoup trop important pour la jeune adolescente."
@@ -501,27 +502,212 @@ label start:
     play music "music/Morning.mp3" fadeout 1.0 loop
     
     "Une journée comme une autre."
-    "C'est ce que Yanis se serait dit si Binta n'était pas absente depuis déjà deux semaines."
+    "C'est ce que Yanis se serait dit si Binta n'était pas victime de cyberharcèlement."
     "Les vidéos qui ont circulé n'ont pas forcément détruit la réputation de Binta, puisque les collégiens ont fini par comprendre qu'il s'agissait de deep fake."
     "Cependant tout le monde ne cherche pas à connaître la vérité : un petit groupe continua à créer des deep fake et inventer des mensonges sur Binta : on appelle ça des fake news."
-    "Parfois on ne cherche pas forcément LA vérité; seulement celle qui nous convient."
+    "Parfois on ne cherche pas forcément LA vérité; seulement celle qui nous convient. Et c'est pour ça que certains croient plus facilement en des mensonges."
     "D'autres préférent fermer leur coeur à la vérité: tout le monde n'est pas un harceleur, mais le silence est tout aussi dangereux."
-    "Pendant la pause, Yanis observe le petit comité qui s'était formé pendant l'absence de Binta."
+    "Pendant la pause, Yanis observe le petit comité qui s'était formé."
     "On pouvait les entendre parler d'elle: des idées de deep fake, de fausses rumeurs à répandre... A leur tête se trouvait Maydan."
     
     show Mayden_default_happy at center
-    m "Vraiment Sarah ta vidéo est excellente ! On dirait vraiment que Binta était chauve !"
+    m "Vraiment Sarah ta vidéo est excellente ! On dirait vraiment qu'elle' était chauve !"
     
     hide Mayden_default_happy
-    "Le groupe se mit à rire aux éclats, tandis que chaque petits groupes "
+    "Le groupe se mit à rire aux éclats, tandis que chaque autre élève de la classe choisit de les ignorer."
+    m "Les amis je vais mettre une vidéo sur le groupe de classe je veux que vous repartagiez tous !"
+    "Le fameux groupe de classe... Maydan et son groupe l'ont créé sans y inclure Binta. La pauvre ne sait même pas que certains l'utilisent pour se moquer d'elle."
+    "Binta s'était mise à une place dans la classe qui permettrait de s'isoler de tous, un moyen pour elle de se couper de l'harcèlement qu'elle subissait."
+    "Yanis la regardait, puis son regard se porta sur le groupe de Maydan, toujours en pleine moquerie de Binta."
 
 
+    menu: 
+            "Yanis allait-il laisser les choses se passer ainsi ?"
+
+            "Intervenir":
+
+                jump goodEnding
+            
+            "Ne rien faire":
+
+                jump badEnding
+    
+
+
+
+label badEnding:
+
+    play music "music/Evening.mp3" fadeout 1.0
+    scene bg_classroom_evening with fade:
+        xalign 0.5
+        yalign 0.2
+    
+    "Il avait décidé de ne rien faire."
+    "Yanis n'était pas du genre à rester silencieux face à ce genre d'injustice, et pourtant, il laissa les événements se dérouler comme ils se sont déroulés durant déjà plusieurs jours."
+    "Pourquoi ne l'avait-il pas défendue ? Il se trouvait mille excuses : \"Ce n’est pas mon problème\", \"Je ne veux pas devenir leur prochaine cible\", \"C’est juste une blague, non ?\""
+    "Pourtant, au fond de lui, il savait. Il savait que les moqueries allaient trop loin."
+    "Chaque recoin de la salle de la classe lui faisait penser à Binta."
+    "Son sourire timide illuminait parfois les journées grises, mais elle était désormais absente. Définitivement absente."
+    "Binta n'est pas venue depuis bientôt 3 semaines, une absence aussi prolongée s'avère risquée pour sa place dans l'établissement."
+    "La tête pleine de pensées, Yanis rentra chez lui."
+    
+    scene bg_street_evening with dissolve:
+        xalign 0.5
+        yalign 0.2  
+    
+    "Sur le trajet, Yanis jouait la scène en boucle. Si seulement il avait intervenu."
+    "Autant pour Binta que pour Maydan : ce comportement finirait par détruire l'humanité qu'il avait."
+    "Maydan et lui se connaissaient bien. Ils avaient l'habitude plus jeunes de se retrouver chaque été pour jouer avec les autres jeunes de leur quartier."
+    "S'il avait pu mettre fin à la folie de Maydan plus tôt, le jeune homme ne serait pas allé aussi loin."
+    "Maintenant tout ceci est trop tard..."
+    "Yanis se retourna une dernière fois sur la rue avant de rentrer chez lui. On voyait les familles remplir la rue de discussions et de rires."
+    "Demain sera une autre journée pour lui, mais Binta restera bloquée dans le passé."
+
+    scene bg_black_screen with fade:
+        xalign 0.5
+        yalign 0.2
+        zoom 2.0
+
+    centered "{size=+75}{cps=8}BAD ENDING{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}Écrit par:\n\nLes jeunes de Louise Michel{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}Codé par:\n\nVegacy{/cps}{/size}{p=5.0}{nw}"
     
     
+
+label goodEnding:
+
+    "L'harcèlement devait cesser."
+    play music "music/Junkyard_Tribe.mp3" loop fadeout 1.0
+    show Yanis_angry at left
+    y "Assez ! Je sais pas si tu te rends compte de ce que tu fais Maydan, mais ça va beaucoup trop loin !"
+    "le cri soudain de Yanis fit sursauter la classe entière. C'était quelqu'un d'assez calme, et personne n'avait entendu sa voix aussi forte."
+    y "C'est mal ce que tu fais. Et se taire l'est tout autant. Je ne suis pas le seul dans la classe a pensé que tout ça va trop loin, mais tout le monde a peur de parler. Pas moi."
+    "Le groupe de Maydan était bouche bée, le plus choqué étant Maydan. Les deux jeunes hommes se connaissaient du temps où ils vivaient dans le même quartier, et les deux n'ont pas encore pu rattraper le temps perdu."
     
+    show Mayden_annoyed at right
+    m "Tiens Yanis ça fait longtemps... Et que suis-je en train de faire au juste ?"
+    y "Ce que tu fais c'est du cyberharcèlement. C'est mal et c'est puni par la loi !"
+    m "Pfff... Même pas vrai !"
+    y "Si tu ne me crois pas tu peux aller vérifier sur internet, c'est vrai quoi t'as pourtant l'habitude de l'utiliser quand tu fais des montages de Binta !"
+    "En entendant son nom, on pouvait apercevoir Binta restait figée, comme si le moindre mouvement attirerait l'attention vers elle."
     
+    show Mayden_anxious at right
+    hide Mayden_annoyed
+    m "Je... Tout ça c'était pour rire ! On voulait pas faire de mal à Binta, hein Binta tu trouvais ça drôle nan ?"
+    "Les mots semblaient vides de sens, même pour Maydan. Il savait pertinemment que ce qu'il faisait était mal."
+
+    show Binta_sad at center
+    b "Non... Ce n'était pas drôle. T'as une idée du nombre de personnes qui m'harcèlent en message privée ? Qui pense encore que c'est moi sur ces vidéos ?"
+
+
+    y "En plus on sait très bien qui a tagué ta porte... Et c'est toi !"
+    "Tous savaient au fond d'eux qu'il s'agissait de Maydan derrière chaque vidéo, où il rajouta le visage de Binta, mais aucun ne voulait y croire."
+    "Avant que Maydan puisse rétorquer, le professeur d'anglais débarqua dans la classe."
+    inconnu "At your desks please... And be quiet !"
+
+    scene bg_classroom_evening with dissolve:
+        xalign 0.5
+        yalign 0.2
+    play music "music/Evening.mp3" fadeout 1.0 loop
+
+    "La cloche signala la fin des cours pour la journée. La dispute survenut auparavant mit un malaise certain dans la classe, mais les choses devaient être dites."
+    "Maydan fut le premier à partir de la classe, puis son groupe d'harceleurs, laissant derrière eux les chuchotements de leur classe."
+    "Pourquoi personne n'a défendu Binta ? Chacun se trouvait mille excuses : \"Ce n’est pas mon problème\", \"Je ne veux pas devenir leur prochaine cible\", \"C’est juste une blague, non ?\""
+    "Pourtant, au fond d'eux, ils savaient. Ils savaient que les moqueries allaient trop loin."
+    "Tandis que Yanis rangeait tranquillement ses affaires, il aperçut une silhouette familière s'approcher de lui."
+
+    show Binta_anxious at right
+    show Yanis_default_happy at left
+    b "Merci encore d'avoir pris ma défense... Ca m'a fait du bien de savoir que j'avais encore des alliés dans la classe."
+    "Les mots de Binta consolida ce que Yanis pensait : c'était la meilleure décision à prendre."
+    y "Ecoute il y a aucun souci... Si tu as besoin de quoi que ce soit tu peux m'en parler."
+    b "Justement, tu aurais des idées pour stopper cette situation ?"
+
+    show Yanis_explaining at left
+    hide Yanis_default_happy
+
+
+    y "Eh bien justement il y a plusieurs choses à faire ! Il faut..."
+
+    menu: 
+            y "Eh bien justement il y a plusieurs choses à faire ! Il faut..."
+
+            "Répondre aux moqueries.":
+
+                jump repondreMoquerie
+            
+            "Ne pas répondre aux moqueries.":
+
+                jump pasRepondreMoquerie
     
+label repondreMoquerie :
+    show Yanis_explaining
+    y "la meilleure chose à faire est de répondre aux moqueries !"
+   
+    b "Euh... T'es sûr de toi ? Ca leur montrerait pas tout simplement que ça m'atteint ?"
+    y "Ah oui c'est pas faux..."
+    "Mieux vaut les ignorer. Le silence est le meilleur des mépris."
+
+label pasRepondreMoquerie:
+    show Yanis_explaining
+    y "La meilleure chose à faire est de les ignorer. Le silence est le meilleur des mépris !"
+    show Binta_very_happy at right
+    hide Binta_anxious
+    b "Oh d'accord je vois ! C'est vrai je ne devrais pas leur montrer que ça m'atteint !"
     
+    b "Ensuite ? Tu as d'autres conseils ?"
+    menu: 
+            y "Bien sûr ! Il faut..."
+
+            "Ne pas prévenir un adulte.":
+
+                jump nePasPrevenir
+            
+            "Prévenir un adulte.":
+
+                jump Prevenir
+
+label nePasPrevenir:
+    y "Mieux vaut ne pas prévenir un adulte, ils ne comprendraient pas de toute façon..."
+    show Binta_anxious at right
+    hide Binta_very_happy
+    b "Ca ne me paraît pas très responsable de ne pas en parler à un adulte de confiance... Et puis, quand on est jeunes c'est les adultes qui ont l'autorité non ?"
+    y "Tu marques un point là..."
+    "{i}Je donne de très mauvais conseils là non ??{/i}"
+
+label Prevenir:
+    y "Il est préférable d'avertir un adulte de confiance. Il saura quoi faire dans ce genre de situations."
+    y "Ca peut peut être un enseignant, une assistante d'éducation, un parent, une CPE..."
+    y "Tu peux même contacter le 3018 au cas où tu n'aurais personne avec qui parler : un adulte t'écoutera et te viendra en aide !"
+    b "J'ai prévenu mes parents, je devrais quand même prévenir les enseignants et dire à M.Serani que je me fais harceler..."
+    show Binta_sad at right
+    hide Binta_anxious
+    hide Binta_very_happy
+    b "Il pensait que c'était moi qui avait tagué la porte de Maydan... Je ne sais pas s'il est au courant des autres vidéos qui m'harcèlent par contre."
+    
+
+    menu: 
+            y "Justement concernant les autres vidéos tu devrais..."
+
+            "Laisser les choses se faire.":
+
+                jump letItBe
+            
+            "Conserver des preuves.":
+
+                jump Preuve
+
+label letItBe:
+    y "Je pense que tu devrais laisser les choses se faire. Elles finiront par disparaître."
+    b "Justement, c'est pas mieux que j'enregistre les preuves de mon harcèlement ? Pour plus facilement prouver mon innocence et leur culpabilité."
+    y "Ah mais oui bien sûr..."
+    "{i}Je suis VRAIMENT à côtés de la plaque...{/i}"
+
+label Preuve: 
+    y "Garde des preuves de ton cyberharcèlement. Crée un dossier avec les vidéos, les commentaires, les messages que tu reçois..."
+    y "Documente ce que tu faisais à certains moments lors de la diffusion des vidéos, enregistre les noms des comptes qui t'harcèlent..."
+    y "En bref, avoir le plus de preuves de ton harcèlement va faciliter le travail des autorités compétentes pour incriminer tes harceleurs."
+
     # This ends the game.
 
     return
