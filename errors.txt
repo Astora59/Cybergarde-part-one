@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 699: expected ':' not found.
-    label letItBe
-                 ^
+File "game/script.rpy", line 860: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    scene bg_black_screen with fade:
+    ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Tue Feb  4 12:35:45 2025
+Wed Feb  5 12:31:18 2025

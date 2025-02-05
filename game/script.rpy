@@ -549,6 +549,10 @@ label badEnding:
     "Chaque recoin de la salle de la classe lui faisait penser à Binta."
     "Son sourire timide illuminait parfois les journées grises, mais elle était désormais absente. Définitivement absente."
     "Binta n'est pas venue depuis bientôt 3 semaines, une absence aussi prolongée s'avère risquée pour sa place dans l'établissement."
+    "En même temps comment revenir ? Ce n'était plus que les deep fake le problème : les collégiens étaient submergés par des fake news sur Binta."
+    "Binta aurait tué des animaux, Binta aurait volé plusieurs camarades de classe, Binta aurait des poux..."
+    "On a tout entendu concernant Binta, comme s'il s'agissait de la personne la plus horrible au monde."
+    "Et tout était faux."
     "La tête pleine de pensées, Yanis rentra chez lui."
     
     scene bg_street_evening with dissolve:
@@ -707,7 +711,160 @@ label Preuve:
     y "Garde des preuves de ton cyberharcèlement. Crée un dossier avec les vidéos, les commentaires, les messages que tu reçois..."
     y "Documente ce que tu faisais à certains moments lors de la diffusion des vidéos, enregistre les noms des comptes qui t'harcèlent..."
     y "En bref, avoir le plus de preuves de ton harcèlement va faciliter le travail des autorités compétentes pour incriminer tes harceleurs."
+    b "Merci beaucoup pour tous ces conseils vraiment... J'espère que la dispute ne t'attirera aucun ennui."
+    y "Je ne me laisserai pas atteindre par tout ça ne t'en fais pas... Je vais bloquer et signaler tout ce que je vois qui serait néfaste pour moi."
 
+
+    "Après cette longue discussion sur le cyberharcèlement, nos deux adolescents prirent leur chemin respectif."
+    "Yanis était fier de lui pour avoir intervenu, et fier de Binta pour avoir été si courageuse. Il espérait que les bons conseils qu'il lui a donné serait utile pour Binta."
+    
+
+    scene bg_front_gate with fade:
+        xalign 0.5  # Centre horizontalement
+        yalign 0.2  # Place plus haut verticalement
+        zoom 0.8
+    play music "music/Morning.mp3"
+
+    "Plusieurs jours ont passé depuis la dernière discussion entre Yanis et Binta. Un long weekend a marqué une pause dans la vie scolaire des étudiants."
+    "Il n'avait pas trop pu regarder si le contenu dégradant envers Binta continuer. Si c'était le cas, Yanis devra voir Maydan en personne."
+
+    scene bg_school_corridor:
+        xalign 0.5  # Centre horizontalement
+        yalign 0.2  # Place plus haut verticalement
+        zoom 0.6
+    "Arrivé à l'entrée de sa classe, M.Serani interpella Yanis."
+
+    show Serani_default at center
+    s "Bonjour Yanis, pourrais-tu me suivre dans mon bureau s'il te plait ?"
+    y "Bonjour monsieur, oui bien sûr..."
+    "De quoi s'agissait-il ?"
+
+
+    scene bg_director_office with dissolve:
+        xalign 0.5  # Centre horizontalement
+        yalign 0.8  # Place plus haut verticalement
+        zoom 2.5
+    play music "music/Covert_Affair.mp3" loop
+    "Une fois arrivé dans le bureau du directeur, Yanis remarqua qu'il n'était pas le seul à avoir été convoqué."
+    "Dans la pièce se trouvait Binta, son regard essayant de fuir un maximum la présence de Maydan, qui était assis à côté d'elle."
+    s "Tu peux t'asseoir Yanis."
+    "M.Serani avait un grand canapé en face de son bureau. Yanis décida de prendre la place du centre, qui sépare Binta de Maydan."
+    show Serani_default at center
+    s "Bien. Il a été porté à mon attention que Maydan eut la porte de sa maison taguée par Binta, parmi d'autres vidéos que Binta aurait prise d'elle."
+    show Maydan_angry at right
+    hide Serani_default
+    m "Ouais exactement ! J'espère que tu répondras de tes actions Binta !"
+    "Chacun pouvait sentir la nervosité dans la voix tremblante de Maydan."
+    "Binta, quant à elle, semblait simplement regarder le directeur en souriant."
+    s "Justement à ce propos... Maydan nous allons te renvoyer de l'établissement. Je vais convoquer tes parents pour convenir à ton expulsion."
+
+    play music "music/Hot Pursuit.mp3" fadeout 1.0 loop
+    show Serani_angry at center
+    hide Maydan_angry
+
+    s "Non seulement tu m'as menti, moi le directeur, mais tu as aussi créé de fausses images de Binta, des deep fake."
+    s "Binta, montre-lui."
+    "Binta, d'un sourire triomphant, sortit son téléphone."
+    "Dessus, on pouvait y voir un dans le gestionnaire de fichiers un dossier au nom bien singulier : \"PREUVES.\""
+    "Maydan savait que c'était fini pour lui."
+    "Dans ce dossier, on pouvait voir les nombreuses images et vidéos truqués de Binta, mais pour chacune de ces images, on y trouvait aussi de légers indices."
+    "Binta avait répertorié tous les moments où le deep fake n'était pas convaincant."
+    "En effet l'adolescent avait mal utilisé la technologie: on pouvait voir à certains moments des artéfacts; des erreurs dans le montage."
+    "Les bordures entre le visage et les cheveux ou le cou peuvent être mal définies."
+    "Les ombres sur le visage peuvent être mal placées ou ne pas correspondre à l'éclairage général de l'image."
+    "Des zones floues peuvent être visibles près des cheveux, des vêtements, ou autour du visage."
+    "Les deepfakes peuvent générer des expressions faciales ou des mouvements étranges qui ne correspondent pas à la posture générale de la personne."
+    "Tous ces indices permettent de repérer si une vidéo est authentique ou non."
+    "Les preuves sont accablantes : toutes les vidéos sont truqués."
+    "Sur certaines vidéos, on pouvait même voir la \"main\" de Binta être blanche, indiquant ainsi que ce n'était pas elle, mais bien Maydan qui est responsable des deep fake."
+
+    show Binta_explaining at left
+    hide Serani_angry
+
+    b "Ce n'est pas tout; en utilisant des outils comme Deepware Scanner ou InVID, on peut repérer les moments où il y a usage de deep fake."
+    b "Avec mon frère, j'ai pu récolter un maximum de preuves me permettant de me disculper. Fallait y réfléchir à deux fois avant de m'attaquer."
+    "Maydan ne tenait plus : on pouvait le voir visiblement nerveux, la tête baissée et jouant avec ses pouces."
+    b "Bien entendu, si les deep fake sont faux, on peut conclure logiquement que les choses qui se dites sur moi le sont aussi. Ce sont des fake news."
+    s "Quelque chose à dire pour ta défense peut-être ?"
+    "Le directeur posa une question à Maydan, mais rien qu'il ne dirait pouvait le sauver."
+    
+    show Mayden_afraid at right
+    m "C'est vrai... C'est vrai ! Quasiment tout est de moi ! Mais pas tout, j'ai pas été le seul à faire ça je vous le jure !"
+    "Maydan, dans une pathétique tentative pour éviter l'expulsion, dénonca tous les complices de l'harcèlement."
+    
+    show Serani_default at center
+    s "Bien merci Maydan, sache que tes acolytes seront eux aussi punis sévèrement."
+    m "Je...Je..."
+    m "C'est vrai tout ça est allé trop loin. Au début j'avais fait ça pour me venger, mais en voyant les stats que je faisais sur Kokot... J'ai pas su m'arrêter."
+    m "Plus j'en faisais, mieux je me sentais. Je faisais tout ça pour le buzz."
+    hide Serani_default
+    show Serani_angry at center
+    s "Le buzz... Je déteste ce mot. Regarde où cela t'a mené, tu pensais qu'il n'y avait aucune conséquence à tes actes ?"
+    m "..."
+    "Maydan préféra ne pas répondre, pour ne pas aggraver sa situation."
+    s "Le pire dans cette situation, c'est que personne ne remet en question ce qu'il regarde. On vous vend une information et vous la consommez."
+    s "Hélas, c'est aussi pour ça que l'harcèlement de Binta a pris de l'ampleur. Personne n'a cherché à savoir si tout cela était vrai, ni éthique."
+    s "Je pense qu'il est temps pour votre génération de prendre du recul sur ce que vous voyez sur Internet. Regardez où cela nous mène."
+    "M.Serani regarda avec une grande désapprobation Maydan. Son regard aurait pu suffire à terrifier le jeune homme, s'il n'avait pas le regard aussi fuyant."
+    hide Serani_angry
+    show Yanis_concerned at center
+    y "Euh monsieur, pourquoi m'avez-vous convoqué, si ce n'est pas indiscret ?"
+    "Même s'il n'avait rien à se reprocher, l'intensité du regard de M.Serani le mettait mal à l'aise, comme si un poids invisible pesait soudain sur ses épaules."
+    hide Yanis_concerned
+    show Serani_default at center
+    s "Oui... Et bien je t'ai convoqué pour te remercier. Binta m'a fait part de ton intervention en classe. Pour l'avoir défendu et conseillé."
+    hide Serani_default
+    show Yanis_concerned at center
+    y "Oh eh bien écoutez, je n'ai fait que mon devoir citoyen !"
+    "Yanis s'était dit que sa petite blague détenderait l'atmosphère. Personne n'a ri."
+    hide Yanis_concerned
+    show Serani_default at center
+    s "Je voulais aussi te remercier Binta. Tu as été exemplaire et courageuse malgré cette situation. Je m'excuse d'avoir douté de toi une seconde."
+    b "Ca ne fait rien monsieur le directeur je vous assure. Merci de m'avoir cru."
+    s "Maydan, quant à toi, tu n'as rien à dire à Binta ?"
+    "Maydan avair l'air effondré : son dos était voûté comme si le poids de ses pensées l'écrasait. Ses mains tremblantes étaient posées sur ses genoux."
+    hide Mayden_afraid
+    show Mayden_sad at right
+    m "Euh... Oui. Binta je suis vraiment désolé pour tout ce que je t'ai fait subir. Tu ne méritais pas ça. Si cela te va, je peux tout supprimer et faire une vidéo d'excuse sur mon compte kokot."
+    s "Bien. Sur ce, si vous n'y voyez aucune objection, Binta et Yanis, je vous demanderai de rejoindre votre classe, j'attends les parents de ce jeune homme."
+    "Maydan le savait : c'était son dernier jour à Hector Vugo. Rien n'y changerait ça. L'air abattu, il regarda les deux adolescents quitter la pièce."
+
+
+    scene bg_street_evening with fade:
+        xalign 0.5
+        yalign 0.2
+
+    play music "music/Evening.mp3"
+
+    "Le dénouement de l'harcèlement se fera petit à petit avec l'intervention du corps enseignant."
+    "Les élèves impliqués dans l'affaire, de cyberharcèlement, dont Maydan, ont tous été expulsés du collège."
+    "L'affaire a fait un bruit retentissant dans les média. Qui aurait crû que des jeunes soient capables de tout ça ?"
+    "Pour Yanis, l'affaire paraîssait déjà loin pourtant. La vie reprit assez vite son cours pour Binta, acclamée en héroïne par les élèves et la presse."
+    inconnu "Attends !"
+    "Une voix s'exclama derrière Yanis, le sortant de ses pensées."
+
+    show Binta_default_happy at right
+    b "Salut Yanis ! Tu rentres chez toi ?"
+
+    show Yanis_default_happy at left
+    y "Ouais c'est exact... Toi aussi ?"
+    b "Oui j'emprunte ce chemin, on fait la route ensemble ?"
+    
+    hide Yanis_default_happy
+    show Yanis_very_happy at left
+    y "Avec plaisir !"
+    "A vrai dire Yanis attendait une opportunité comme celle-ci pour se rapprocher de Binta."
+    "Et c'est ainsi que cette histoire se termine, mais celle de nos protagonistes ne fait que commencer."
+
+
+    scene bg_black_screen with fade:
+        xalign 0.5
+        yalign 0.2
+        zoom 2.0
+
+    centered "{size=+75}{cps=8}GOOD ENDING{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}Écrit par:\n\nLes jeunes de Louise Michel{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}Codé par:\n\nVegacy{/cps}{/size}{p=5.0}{nw}"
     # This ends the game.
 
     return
