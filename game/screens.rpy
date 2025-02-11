@@ -1534,6 +1534,8 @@ screen quick_menu():
 style window:
     variant "small"
     background "gui/phone/textbox.png"
+    xsize 1180
+    ysize 300
 
 style radio_button:
     variant "small"
