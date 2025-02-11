@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 860: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    scene bg_black_screen with fade:
-    ^
+File "game/gui.rpy", line 134: expected expression
+    define gui.dialogue_ypos = 
+                               ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Wed Feb  5 12:31:18 2025
+Tue Feb 11 09:37:02 2025

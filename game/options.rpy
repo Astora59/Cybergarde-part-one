@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("cybergarde part1")
+define config.name = _("Cybergarde partie 1")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -150,7 +150,7 @@ define config.save_directory = "cybergardepart1-1734430775"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "gui/Cyberbullying.jpg"
 
 
 ## Build configuration #########################################################

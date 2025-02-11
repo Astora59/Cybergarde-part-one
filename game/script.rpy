@@ -3,12 +3,12 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define b = Character("Binta", color="#BD93BD")
-define y = Character("Yanis")
-define m = Character("Maydan", color="#E94F37")
-define s = Character("M.Serani", color="#6FFFE9")
-define inconnu = Character("???")
-define Ali = Character("Ali", color="#B4D6D3")
+define b = Character("Binta", color="#000000")
+define y = Character("Yanis", color="#000000")
+define m = Character("Maydan", color="#000000")
+define s = Character("M.Serani", color="#000000")
+define inconnu = Character("???", color="#000000")
+define Ali = Character("Ali", color="#000000")
 
 
 # declare characters sprites
@@ -577,7 +577,7 @@ label badEnding:
     centered "{size=+75}{cps=8}Codé par:\n\nVegacy{/cps}{/size}{p=5.0}{nw}"
     
     
-
+    return 
 label goodEnding:
 
     "L'harcèlement devait cesser."
