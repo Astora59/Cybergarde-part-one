@@ -572,9 +572,10 @@ label badEnding:
         yalign 0.2
         zoom 2.0
 
-    centered "{size=+75}{cps=8}BAD ENDING{/cps}{/size}{p=5.0}{nw}"
-    centered "{size=+75}{cps=8}Écrit par:\n\nLes jeunes de Louise Michel{/cps}{/size}{p=5.0}{nw}"
-    centered "{size=+75}{cps=8}Codé par:\n\nVegacy{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}{color=#ffffff}BAD ENDING{/color}{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}{color=#ffffff}Écrit par:\n\nLes jeunes de Louise Michel{/color}{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}{color=#ffffff}Codé par:\n\nVegacy{/color}{/cps}{/size}{p=5.0}{nw}"
+
     
     
     return 
@@ -862,9 +863,10 @@ label Preuve:
         yalign 0.2
         zoom 2.0
 
-    centered "{size=+75}{cps=8}GOOD ENDING{/cps}{/size}{p=5.0}{nw}"
-    centered "{size=+75}{cps=8}Écrit par:\n\nLes jeunes de Louise Michel{/cps}{/size}{p=5.0}{nw}"
-    centered "{size=+75}{cps=8}Codé par:\n\nVegacy{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}{color=#ffffff}GOOD ENDING{/color}{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}{color=#ffffff}Écrit par:\n\nLes jeunes de Louise Michel{/color}{/cps}{/size}{p=5.0}{nw}"
+    centered "{size=+75}{cps=8}{color=#ffffff}Codé par:\n\nVegacy{/color}{/cps}{/size}{p=5.0}{nw}"
+
     # This ends the game.
 
     return

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 134: expected expression
-    define gui.dialogue_ypos = 
-                               ^
+File "game/tl/french/script.rpy", line 1: expected statement.
+    R
+     ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Tue Feb 11 09:37:02 2025
+Tue Feb 11 17:27:40 2025
