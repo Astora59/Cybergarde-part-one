@@ -432,18 +432,20 @@ init python:
     def small():
 
         ## Font sizes.
-        gui.text_size = 45
-        gui.name_text_size = 54
+        gui.text_size = 25
+        gui.name_text_size = 34
         gui.notify_text_size = 38
-        gui.interface_text_size = 45
+        gui.interface_text_size = 35
         gui.button_text_size = 45
         gui.label_text_size = 51
 
         ## Adjust the location of the textbox.
         gui.textbox_height = 360
-        gui.name_xpos = 120
+        gui.name_xpos = 200
+        gui.name_ypos = 36
         gui.dialogue_xpos = 135
-        gui.dialogue_width = 1650
+        gui.dialogue_ypos = 115
+        gui.dialogue_width = 1000
 
         ## Change the size and spacing of various things.
         gui.slider_size = 54
