@@ -720,7 +720,11 @@ label Preuve:
     b "Tu as des conseils en particulier ?"
     y "Oui ! L'idéal serait d'avoir des modérateurs, qui pourront juger de la bonne conduite de la classe !"
     b "Oh c'est une superbe idée ! On en parlera aux professeurs pour qu'ils nous aident à mettre le groupe en place !"
-
+    b "Et pour le groupe de classe sur Whatsapp ? Personne ne m'a ajouté..."
+    y "Effectivement si personne ne t'a ajouté, c'est vraiment pas bien ! Tout le monde devrait être inclus pour éviter de se sentir à l'écart..."
+    b "Tu as des conseils en particulier ?"
+    y "Oui ! L'idéal serait d'avoir des modérateurs, qui pourront juger de la bonne conduite de la classe !"
+    b "Oh c'est une superbe idée ! On en parlera aux professeurs pour qu'ils nous aident à mettre le groupe en place !"
 
     "Après cette longue discussion sur le cyberharcèlement, nos deux adolescents prirent leur chemin respectif."
     "Yanis était fier de lui pour avoir intervenu, et fier de Binta pour avoir été si courageuse. Il espérait que les bons conseils qu'il lui a donné serait utile pour Binta."
