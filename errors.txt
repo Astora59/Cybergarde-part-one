@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/tl/french/script.rpy", line 1: expected statement.
-    R
+File "game/options.rpy", line 52: invalid character '“' (U+201C)
+    “”
      ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Tue Feb 11 17:27:40 2025
+Mon Feb 17 11:03:00 2025

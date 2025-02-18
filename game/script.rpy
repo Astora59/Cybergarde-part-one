@@ -112,6 +112,7 @@ transform center:
 # The game starts here.
 
 label start:
+    stop music
 
     "Cette oeuvre est un travail de fiction. Toute ressemblance à des personnes ou des événements est totalement fortuite."
     "Si vous êtes témoin de toute forme d'harcèlement ou de cyberharcèlement, ne laissez pas faire ces actions et contactez les autorités compétentes."
