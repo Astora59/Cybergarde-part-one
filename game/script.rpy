@@ -714,6 +714,11 @@ label Preuve:
     y "En bref, avoir le plus de preuves de ton harcèlement va faciliter le travail des autorités compétentes pour incriminer tes harceleurs."
     b "Merci beaucoup pour tous ces conseils vraiment... J'espère que la dispute ne t'attirera aucun ennui."
     y "Je ne me laisserai pas atteindre par tout ça ne t'en fais pas... Je vais bloquer et signaler tout ce que je vois qui serait néfaste pour moi."
+    b "Et pour le groupe de classe sur Whatsapp ? Personne ne m'a ajouté..."
+    y "Effectivement si personne ne t'a ajouté, c'est vraiment pas bien ! Tout le monde devrait être inclus pour éviter de se sentir à l'écart..."
+    b "Tu as des conseils en particulier ?"
+    y "Oui ! L'idéal serait d'avoir des modérateurs, qui pourront juger de la bonne conduite de la classe !"
+    b "Oh c'est une superbe idée ! On en parlera aux professeurs pour qu'ils nous aident à mettre le groupe en place !"
 
 
     "Après cette longue discussion sur le cyberharcèlement, nos deux adolescents prirent leur chemin respectif."
